@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 
-ROOT_DIR="$( cd "$( dirname $BASH_SOURCE[0] )" && cd .. && pwd )"
+#ROOT_DIR="$( cd "$( dirname $BASH_SOURCE[0] )" && cd .. && pwd )"
+ROOT_DIR="/root/gitlab2jira"
 SRC_DIR="${ROOT_DIR}/src"
 BUILD_CONF_DIR="${ROOT_DIR}/build"
 BUILT_DIR="${ROOT_DIR}/"
 COMP_DIR="bower_components/"
 
-NODE_BIN=/usr/local/bin/node
+NODE_BIN=/usr/bin/node
 NPM_BIN=/usr/local/bin/npm
 
 R_JS="${COMP_DIR}/r.js/dist/r.js"

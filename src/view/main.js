@@ -76,9 +76,11 @@ define([
 
                 $_this.find('textarea').val("");
                 issueView.on('stopLoop', function () {
-                    var
-                        issueSysId       = self.getIssuesIds(issueView.options.data, 'id'),
-                        issueProjId      = self.getIssuesIds(issueView.options.data, 'iid'),
+			var issueProjId      = self.getIssuesIds(issueView.options.data, 'iid');
+                    //var
+                        //issueSysId       = self.getIssuesIds(issueView.options.data, 'id'),
+                        //issueProjId      = self.getIssuesIds(issueView.options.data, 'iid'),
+			var issueSysId = issueProjId,
                         collectionParams = {
                             project: encodeURIComponent(object.gl_pid),
                             issue: issueSysId[0],
@@ -88,7 +90,7 @@ define([
                         },
                         noteView         = new NoteView({
                             options: {
-                                sysIds: issueSysId,
+                                sysIds: issueProjId,
                                 projIds: issueProjId,
                                 collectionParams: collectionParams
                             },

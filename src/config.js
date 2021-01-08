@@ -15,7 +15,7 @@ requirejs.config({
         bootstrap_css: '../bower_components/bootstrap/dist/css/bootstrap',
         mediator:      '../bower_components/backbone-mediator/backbone-mediator',
         pace:          '../bower_components/pace/pace',
-        pace_css:      '../bower_components/pace/themes/pace-theme-center-simple'
+        pace_css:      '../bower_components/pace/themes/black/pace-theme-center-simple'
     },
     shim: {
         'underscore': {
@@ -48,8 +48,8 @@ requirejs.config({
     config: {
         'app': {
             base: {
-                url: 'http://gitlab.local',
-                path: '/api/v3/'
+                url: 'https://192.168.70.42',
+                path: '/api/v4/'
             }
         }
     }
